@@ -20,11 +20,11 @@ console.log(proceso.connected);
 
 proceso.stdout.on("data", function(dato) {
     console.log("¿Está muerto?");
-    console.log(process.killed);
-    console.log(dato.toSring());
+    console.log(proceso.killed);
+    console.log(dato.toString());
 });
 
 proceso.on("exit", function() {
-    console.log("El proceso terminó");
+    console.log("el proeso terminó");
     console.log(proceso.killed);
 });
